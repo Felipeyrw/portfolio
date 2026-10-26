@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Felipe Carolino — Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+  <script src="../js/components/theme-switcher.js"></script>
+  <link rel="stylesheet" href="../themes/light.css" />
+  <link rel="stylesheet" href="../themes/dark.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+</head>
+
+<body data-title-en="Projects" data-title-pt="Projetos">
+  <header class="header container">
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false"><svg viewBox="0 0 24 24"
+        fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"
+        aria-hidden="true">
+        <circle cx="12" cy="12" r="4" />
+        <path
+          d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" />
+      </svg><span data-language="en" data-theme-label="dark">Dark mode</span><span hidden data-language="pt"
+        data-theme-label="dark">Modo escuro</span><span hidden data-language="en" data-theme-label="light">Light
+        mode</span><span hidden data-language="pt" data-theme-label="light">Modo claro</span></button>
+    <nav class="nav nav--desktop" aria-label="Main navigation"><a href="home.html"><span
+          data-language="en">Home</span><span hidden data-language="pt">Início</span></a><a href="about.html"><span
+          data-language="en">About</span><span hidden data-language="pt">Sobre</span></a><a href="projects.html"
+        aria-current="page"><span data-language="en">Projects</span><span hidden
+          data-language="pt">Projetos</span></a><a href="article.html"><span data-language="en">Article</span><span
+          hidden data-language="pt">Artigo</span></a><a href="contact.html"><span data-language="en">Contact</span><span
+          hidden data-language="pt">Contato</span></a></nav>
+    <div class="header__right">
+      <div class="lang" role="group" aria-label="Language"><button type="button" data-lang="en"
+          aria-pressed="true">EN</button><button type="button" data-lang="pt" aria-pressed="false">PT</button></div><a
+        class="btn btn--solid" href="https://github.com/Felipeyrw" target="_blank" rel="noopener"><svg
+          viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+          <path
+            d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.34c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.23 1.88.87 2.34.67.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0z" />
+        </svg><span>GitHub</span></a>
+    </div>
+    <details class="mobile-nav">
+      <summary><span data-language="en">Menu</span><span hidden data-language="pt">Menu</span></summary>
+      <nav class="nav" aria-label="Mobile navigation"><a href="home.html"><span data-language="en">Home</span><span
+            hidden data-language="pt">Início</span></a><a href="about.html"><span data-language="en">About</span><span
+            hidden data-language="pt">Sobre</span></a><a href="projects.html" aria-current="page"><span
+            data-language="en">Projects</span><span hidden data-language="pt">Projetos</span></a><a
+          href="article.html"><span data-language="en">Article</span><span hidden data-language="pt">Artigo</span></a><a
+          href="contact.html"><span data-language="en">Contact</span><span hidden data-language="pt">Contato</span></a>
+      </nav>
+    </details>
+  </header>
+  <main class="container">
+    <section class="section section--first" data-language="en">
+      <h2>Projects</h2>
+      <p class="section__sub">Selected repositories from my GitHub.</p>
+      <div class="grid">
+        <article class="project">
+          <h3>Koffe</h3>
+          <div class="chips"><span class="chip chip--sm">Flutter</span><span class="chip chip--sm">Dart</span><span
+              class="chip chip--sm">Supabase</span><span class="chip chip--sm">SQLite + SQLCipher</span><span
+              class="chip chip--sm">Android</span></div>
+          <p>Barbershop and massage clinic management app that works 100% offline and syncs to the cloud when connected.
+            Private project in active development.</p>
+          <ul>
+            <li>Offline-first: data is saved locally first, with a sync manager, exponential backoff retries and
+              merge-based conflict resolution</li>
+            <li>Voice scheduling with AI (Groq): speak in Portuguese and the form fills itself</li>
+            <li>Encrypted local database (SQLCipher), biometric authentication and device tracking</li>
+            <li>Scale: 41,000+ lines of code, 174 Dart files and 14 sync managers</li>
+          </ul>
+        </article>
+        <article class="project">
+          <h3>Jonas AI</h3>
+          <div class="chips"><span class="chip chip--sm">n8n</span><span class="chip chip--sm">OpenAI</span><span
+              class="chip chip--sm">Evolution API</span><span class="chip chip--sm">PostgreSQL</span><span
+              class="chip chip--sm">Docker</span><span class="chip chip--sm">RAG</span></div>
+          <p>AI assistant for real estate agencies that automates WhatsApp customer service with natural conversations
+            and a RAG knowledge base.</p>
+          <ul>
+            <li>Context memory and grouping of consecutive messages before generating a reply</li>
+            <li>Typing simulation to make the interaction feel human</li>
+            <li>Property search by city, neighborhood, price range, type and bedrooms through RAG</li>
+            <li>Automatic lead qualification and conversation history</li>
+          </ul>
+        </article>
+        <article class="project project--wide">
+          <h3>Business KPI Automation</h3>
+          <div class="chips"><span class="chip chip--sm">Python</span><span class="chip chip--sm">pandas</span><span
+              class="chip chip--sm">smtplib</span></div>
+          <p>Automation that turns spreadsheet data into business insight: it calculates KPIs, checks them against
+            targets and emails a personalized report to each company.</p>
+          <ul>
+            <li>Calculates revenue, average ticket and product diversity, for the day and for the year</li>
+            <li>Target validation with a green or red status for each indicator</li>
+            <li>Batch processing of many companies in a single run, sent over SMTP</li>
+            <li>Spreadsheet attached to each email for more detail</li>
+          </ul>
+          <div class="project__shots">
+            <figure><a href="../assets/projects/indicadores-email.webp" target="_blank" rel="noopener"><img
+                  src="../assets/projects/indicadores-email.webp" alt="Personalized email with daily and yearly KPIs"
+                  data-alt-en="Personalized email with daily and yearly KPIs"
+                  data-alt-pt="E-mail personalizado com os KPIs do dia e do ano" loading="lazy" /></a>
+              <figcaption><span data-language="en">Personalized email with daily and yearly KPIs</span><span hidden
+                  data-language="pt">E-mail personalizado com os KPIs do dia e do ano</span></figcaption>
+            </figure>
+            <figure><a href="../assets/projects/indicadores-envio.webp" target="_blank" rel="noopener"><img
+                  src="../assets/projects/indicadores-envio.webp" alt="Emails sent in a single batch run"
+                  data-alt-en="Emails sent in a single batch run"
+                  data-alt-pt="E-mails enviados em uma única execução em lote" loading="lazy" /></a>
+              <figcaption><span data-language="en">Emails sent in a single batch run</span><span hidden
+                  data-language="pt">E-mails enviados em uma única execução em lote</span></figcaption>
+            </figure>
+          </div>
+        </article>
+        <article class="project">
+          <h3>Planejai</h3>
+          <div class="chips"><span class="chip chip--sm">React</span><span class="chip chip--sm">TypeScript</span><span
+              class="chip chip--sm">Vite</span><span class="chip chip--sm">TailwindCSS</span><span
+              class="chip chip--sm">LocalStorage</span></div>
+          <p>Responsive website built during the Santander Front-End Bootcamp (React + AI) by DIO. It organizes your
+            goals and uses AI to simulate a plan to reach them within your timeframe.</p>
+          <ul>
+            <li>New simulation from 6 inputs: income, fixed expenses, debts, goal name, cost and deadline</li>
+            <li>Results page with AI-generated recommendations to reach the goal on time</li>
+            <li>History of past simulations, with details and delete</li>
+            <li>Light and dark theme switcher</li>
+          </ul>
+        </article>
+        <article class="project">
+          <h3>SellingControl</h3>
+          <div class="chips"><span class="chip chip--sm">Python</span><span class="chip chip--sm">Kivy</span><span
+              class="chip chip--sm">Firebase</span></div>
+          <p>Online sales control app for the day-to-day of a seller: suppliers, products sold and sales records.</p>
+          <ul>
+            <li>Login and sign-up with Firebase</li>
+            <li>Sales registration with suppliers, products and prices</li>
+            <li>Follow other sellers and track their sales</li>
+            <li>Automatic login through a refresh token</li>
+          </ul>
+        </article>
+        <article class="project">
+          <h3>devroast</h3>
+          <div class="chips"><span class="chip chip--sm">Vibe Coding</span><span class="chip chip--sm">Prompt
+              Enginnering</span></div>
+          <p>Tool for developers who want direct, unfiltered feedback on their code: paste it, pick the analysis mode
+            and get an evaluation.</p>
+          <ul>
+            <li>Roast mode for maximum sarcasm</li>
+            <li>Score from 0 to 10 and a leaderboard of the worst code submitted</li>
+            <li>Detailed analysis with issues, suggestions and diffs</li>
+            <li>Dark interface with JetBrains Mono and an emerald green accent</li>
+          </ul>
+        </article>
+      </div>
+      <a class="btn btn--solid more" href="https://github.com/Felipeyrw" target="_blank" rel="noopener">See all on
+        GitHub</a>
+    </section>
+    <section class="section section--first" hidden data-language="pt">
+      <h2>Projetos</h2>
+      <p class="section__sub">Repositórios selecionados do meu GitHub.</p>
+      <div class="grid">
+        <article class="project">
+          <h3>Koffe</h3>
+          <div class="chips"><span class="chip chip--sm">Flutter</span><span class="chip chip--sm">Dart</span><span
+              class="chip chip--sm">Supabase</span><span class="chip chip--sm">SQLite + SQLCipher</span><span
+              class="chip chip--sm">Android</span></div>
+          <p>App de gestão para barbearias e clínicas de massoterapia que funciona 100% offline e sincroniza na nuvem
+            quando há conexão. Projeto privado em desenvolvimento.</p>
+          <ul>
+            <li>Offline-first: dados salvos primeiro no aparelho, com sync manager, retentativas com backoff exponencial
+              e resolução de conflitos por merge</li>
+            <li>Agendamento por voz com IA (Groq): fale em português e o formulário é preenchido</li>
+            <li>Banco local criptografado (SQLCipher), autenticação biométrica e rastreamento de dispositivos</li>
+            <li>Escala: mais de 41.000 linhas de código, 174 arquivos Dart e 14 sync managers</li>
+          </ul>
+        </article>
+        <article class="project">
+          <h3>Jonas AI</h3>
+          <div class="chips"><span class="chip chip--sm">n8n</span><span class="chip chip--sm">OpenAI</span><span
+              class="chip chip--sm">Evolution API</span><span class="chip chip--sm">PostgreSQL</span><span
+              class="chip chip--sm">Docker</span><span class="chip chip--sm">RAG</span></div>
+          <p>Assistente de IA para imobiliárias que automatiza o atendimento via WhatsApp com conversas naturais e uma
+            base de conhecimento com RAG.</p>
+          <ul>
+            <li>Memória de contexto e agrupamento de mensagens consecutivas antes de gerar a resposta</li>
+            <li>Simulação de digitação para deixar a interação mais humana</li>
+            <li>Busca de imóveis por cidade, bairro, faixa de preço, tipo e quartos usando RAG</li>
+            <li>Qualificação automática de leads e histórico de conversas</li>
+          </ul>
+        </article>
+        <article class="project project--wide">
+          <h3>Automação de Indicadores</h3>
+          <div class="chips"><span class="chip chip--sm">Python</span><span class="chip chip--sm">pandas</span><span
+              class="chip chip--sm">smtplib</span></div>
+          <p>Automação que transforma dados de planilhas em informação de negócio: calcula KPIs, confere as metas e
+            envia um relatório personalizado por e-mail para cada empresa.</p>
+          <ul>
+            <li>Calcula faturamento, ticket médio e diversidade de produtos, no dia e no ano</li>
+            <li>Validação de metas com status verde ou vermelho para cada indicador</li>
+            <li>Processamento em lote de várias empresas em uma única execução, com envio por SMTP</li>
+            <li>Planilha anexada a cada e-mail para mais detalhes</li>
+          </ul>
+          <div class="project__shots">
+            <figure><a href="../assets/projects/indicadores-email.webp" target="_blank" rel="noopener"><img
+                  src="../assets/projects/indicadores-email.webp" alt="E-mail personalizado com os KPIs do dia e do ano"
+                  data-alt-en="Personalized email with daily and yearly KPIs"
+                  data-alt-pt="E-mail personalizado com os KPIs do dia e do ano" loading="lazy" /></a>
+              <figcaption><span data-language="en">Personalized email with daily and yearly KPIs</span><span hidden
+                  data-language="pt">E-mail personalizado com os KPIs do dia e do ano</span></figcaption>
+            </figure>
+            <figure><a href="../assets/projects/indicadores-envio.webp" target="_blank" rel="noopener"><img
+                  src="../assets/projects/indicadores-envio.webp" alt="E-mails enviados em uma única execução em lote"
+                  data-alt-en="Emails sent in a single batch run"
+                  data-alt-pt="E-mails enviados em uma única execução em lote" loading="lazy" /></a>
+              <figcaption><span data-language="en">Emails sent in a single batch run</span><span hidden
+                  data-language="pt">E-mails enviados em uma única execução em lote</span></figcaption>
+            </figure>
+          </div>
+        </article>
+        <article class="project">
+          <h3>Planejai</h3>
+          <div class="chips"><span class="chip chip--sm">React</span><span class="chip chip--sm">TypeScript</span><span
+              class="chip chip--sm">Vite</span><span class="chip chip--sm">TailwindCSS</span><span
+              class="chip chip--sm">LocalStorage</span></div>
+          <p>Site responsivo feito no Bootcamp Santander Front-End (React + AI) da DIO. Organiza suas metas e usa IA
+            para simular um plano para alcançá-las dentro do seu prazo.</p>
+          <ul>
+            <li>Nova simulação com 6 dados: renda, despesas fixas, dívidas, nome da meta, custo e prazo</li>
+            <li>Página de resultados com recomendações geradas por IA para chegar à meta no prazo</li>
+            <li>Histórico de simulações, com detalhes e exclusão</li>
+            <li>Alternância entre tema claro e escuro</li>
+          </ul>
+        </article>
+        <article class="project">
+          <h3>SellingControl</h3>
+          <div class="chips"><span class="chip chip--sm">Python</span><span class="chip chip--sm">Kivy</span><span
+            class="chip chip--sm">Firebase</span></div>
+          <p>App online de controle de vendas para o dia a dia de um vendedor: fornecedores, produtos vendidos e
+            cadastro de vendas.</p>
+          <ul>
+            <li>Login e cadastro com Firebase</li>
+            <li>Cadastro de vendas com fornecedores, produtos e preços</li>
+            <li>Acompanhamento de outros vendedores e das vendas deles</li>
+            <li>Login automático por refresh token</li>
+          </ul>
+        </article>
+        <article class="project">
+          <h3>devroast</h3>
+          <div class="chips"><span class="chip chip--sm">Vibe Coding</span><span class="chip chip--sm">Prompt
+              Enginnering</span></div>
+          <p>Ferramenta para desenvolvedores que querem feedback direto e sem filtros sobre o código: cole, escolha o
+            modo de análise e receba a avaliação.</p>
+          <ul>
+            <li>Modo roast com sarcasmo máximo</li>
+            <li>Nota de 0 a 10 e leaderboard com os piores códigos enviados</li>
+            <li>Análise detalhada com problemas, sugestões e diffs</li>
+            <li>Interface escura com JetBrains Mono e destaque em verde esmeralda</li>
+          </ul>
+        </article>
+      </div>
+      <a class="btn btn--solid more" href="https://github.com/Felipeyrw" target="_blank" rel="noopener">Ver todos no
+        GitHub</a>
+    </section>
+  </main>
+  <script src="../js/components/language-switcher.js"></script>
+</body>
+
+</html>
