@@ -1,0 +1,28 @@
+/* Tema claro — paleta Koffe: cream #fdfaf5, ink #1a1714, gold #b89b6e */
+:root,
+:root[data-theme="light"] {
+  color-scheme: light;
+  --font-sans: "Nunito Sans", system-ui, sans-serif;
+  --font-serif: "DM Serif Display", Georgia, serif;
+  --bg: #fdfaf5;
+  --bg-lines: rgba(26, 23, 20, 0.022);
+  --surface-from: #f1ede4;
+  --surface-to: #d9ccb5;
+  --card: rgba(255, 255, 255, 0.55);
+  --text: #1a1714;
+  --text-soft: #5d534a;
+  --text-faint: #9c7e4f;
+  --accent: #b89b6e;
+  --btn-bg: #1a1714;
+  --btn-text: #f5ede0;
+  --btn-ghost-bg: rgba(255, 255, 255, 0.4);
+  --border: rgba(26, 23, 20, 0.13);
+  --glass-bg: rgba(26, 23, 20, 0.46);
+  --glass-border: rgba(245, 237, 216, 0.3);
+  --glass-text: #f5edd8;
+  --glass-muted: rgba(245, 237, 216, 0.78);
+  --glass-btn-bg: #f5edd8;
+  --glass-btn-icon: #1a1208;
+  --photo-filter: grayscale(1) sepia(0.3) contrast(1.05);
+  --shadow-btn: 0 6px 14px rgba(26, 23, 20, 0.2);
+}

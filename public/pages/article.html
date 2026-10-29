@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Felipe Carolino — Article</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <script src="../js/components/theme-switcher.js"></script>
+    <link rel="stylesheet" href="../themes/light.css" />
+    <link rel="stylesheet" href="../themes/dark.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/pages.css" />
+  </head>
+  <body data-title-en="Article" data-title-pt="Artigo">
+    <header class="header container">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /></svg><span data-language="en" data-theme-label="dark">Dark mode</span><span hidden data-language="pt" data-theme-label="dark">Modo escuro</span><span hidden data-language="en" data-theme-label="light">Light mode</span><span hidden data-language="pt" data-theme-label="light">Modo claro</span></button>
+      <nav class="nav nav--desktop" aria-label="Main navigation"><a href="../index.html"><span data-language="en">Home</span><span hidden data-language="pt">Início</span></a><a href="about.html"><span data-language="en">About</span><span hidden data-language="pt">Sobre</span></a><a href="projects.html"><span data-language="en">Projects</span><span hidden data-language="pt">Projetos</span></a><a href="article.html" aria-current="page"><span data-language="en">Article</span><span hidden data-language="pt">Artigo</span></a><a href="contact.html"><span data-language="en">Contact</span><span hidden data-language="pt">Contato</span></a></nav>
+      <div class="header__right"><div class="lang" role="group" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="pt" aria-pressed="false">PT</button></div><a class="btn btn--solid" href="https://github.com/Felipeyrw" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.34c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.23 1.88.87 2.34.67.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0z"/></svg><span>GitHub</span></a></div>
+      <details class="mobile-nav"><summary><span data-language="en">Menu</span><span hidden data-language="pt">Menu</span></summary><nav class="nav" aria-label="Mobile navigation"><a href="../index.html"><span data-language="en">Home</span><span hidden data-language="pt">Início</span></a><a href="about.html"><span data-language="en">About</span><span hidden data-language="pt">Sobre</span></a><a href="projects.html"><span data-language="en">Projects</span><span hidden data-language="pt">Projetos</span></a><a href="article.html" aria-current="page"><span data-language="en">Article</span><span hidden data-language="pt">Artigo</span></a><a href="contact.html"><span data-language="en">Contact</span><span hidden data-language="pt">Contato</span></a></nav></details>
+    </header>
+    <main class="container prose">
+      <article data-language="en">
+        <h1>How I build software</h1>
+        <p class="lead">Structure first, evidence over guesswork. This is the approach behind Koffe and my other projects.</p>
+        <h2>Feature-first architecture</h2>
+        <p>Each feature lives in its own folder with a page, a controller and its widgets, while shared code stays in core. Anyone can open one folder and understand a whole feature.</p>
+        <pre class="tree">lib/
+  core/
+    theme/app_colors.dart
+    widgets/
+  features/
+    clientes/
+      clientes_page.dart
+      clientes_controller.dart
+      clientes_widgets.dart
+      clientes_form_modal.dart</pre>
+        <h2>Design tokens, not hardcoded colors</h2>
+        <p>Colors come from the theme (primary, secondary, surface, error) and never from hex values inside widgets. Rebranding or adding dark mode touches one place.</p>
+        <h2>Offline-first by default</h2>
+        <p>Data is saved to SQLite first and synced with Supabase. Deletes are soft (deleted_at), conflicts are handled with optimistic locking, and failed syncs retry with exponential backoff.</p>
+        <h2>Security at the edges</h2>
+        <p>Row Level Security on the database, role-based routing for owner and employee accounts, and sensitive flows like invites handled by Edge Functions.</p>
+        <h2>How I work</h2>
+        <p>I research the problem first, break it into small structured steps and check each result against evidence before moving on.</p>
+      </article>
+      <article hidden data-language="pt">
+        <h1>Como eu construo software</h1>
+        <p class="lead">Estrutura primeiro, evidência em vez de palpite. É a abordagem por trás do Koffe e dos meus outros projetos.</p>
+        <h2>Arquitetura feature-first</h2>
+        <p>Cada funcionalidade vive na própria pasta, com página, controller e widgets, enquanto o código compartilhado fica em core. Qualquer pessoa abre uma pasta e entende a funcionalidade inteira.</p>
+        <pre class="tree">lib/
+  core/
+    theme/app_colors.dart
+    widgets/
+  features/
+    clientes/
+      clientes_page.dart
+      clientes_controller.dart
+      clientes_widgets.dart
+      clientes_form_modal.dart</pre>
+        <h2>Design tokens, não cores fixas</h2>
+        <p>As cores vêm do tema (primary, secondary, surface, error) e nunca de valores hex dentro dos widgets. Mudar a marca ou adicionar modo escuro mexe em um lugar só.</p>
+        <h2>Offline-first por padrão</h2>
+        <p>Os dados são salvos primeiro no SQLite e sincronizados com o Supabase. Exclusões são lógicas (deleted_at), conflitos usam bloqueio otimista e sincronizações com falha são repetidas com backoff exponencial.</p>
+        <h2>Segurança nas bordas</h2>
+        <p>Row Level Security no banco, roteamento por perfil para contas de dono e funcionário, e fluxos sensíveis, como convites, tratados por Edge Functions.</p>
+        <h2>Como eu trabalho</h2>
+        <p>Primeiro pesquiso o problema, divido em passos pequenos e estruturados e confiro cada resultado com evidências antes de seguir.</p>
+      </article>
+    </main>
+    <script src="../js/components/language-switcher.js"></script>
+  </body>
+</html>

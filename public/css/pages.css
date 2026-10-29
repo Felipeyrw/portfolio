@@ -1,0 +1,384 @@
+/* ==========================================================================
+   Pages — projetos, sobre, artigo e contato
+   ========================================================================== */
+
+/* Seções e grid de projetos ----------------------------------------------- */
+
+.section {
+  margin-top: clamp(72px, 5vw, 92px);
+}
+
+.section--first {
+  margin-top: clamp(24px, 1.8vw, 34px);
+}
+
+.section h2,
+.prose h2 {
+  font: 400 clamp(30px, 3.7vw, 52px) / 1.1 var(--font-serif);
+  letter-spacing: -0.02em;
+}
+
+.section__sub {
+  margin-top: 12px;
+  font-size: clamp(17px, 1.5vw, 23px);
+  color: var(--text-soft);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(16px, 1.3vw, 22px);
+  margin-top: clamp(28px, 2vw, 36px);
+}
+
+.project {
+  padding: clamp(26px, 2.1vw, 36px) clamp(28px, 2.3vw, 40px);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--card);
+}
+
+.project--wide {
+  grid-column: 1 / -1;
+}
+
+.project h3 {
+  font: 400 clamp(26px, 2vw, 34px) / 1.1 var(--font-serif);
+}
+
+.project h3 + p {
+  margin-top: 10px;
+}
+
+.project .chips {
+  margin: 12px 0 14px;
+}
+
+.chip--sm {
+  padding: 4px 10px;
+  font-size: 12.5px;
+}
+
+.project p {
+  font-size: clamp(15.5px, 1.4vw, 20px);
+  line-height: 1.55;
+  color: var(--text-soft);
+}
+
+.project ul {
+  margin-top: 14px;
+  padding-left: 18px;
+  font-size: clamp(14.5px, 1.3vw, 19px);
+  line-height: 1.55;
+  color: var(--text-soft);
+}
+
+.project li {
+  margin-bottom: 6px;
+}
+
+.project__shots {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 16px;
+  align-items: start;
+  margin-top: 22px;
+}
+
+.project__shots--koffe {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(8px, 1vw, 16px);
+}
+
+.project__shots img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.project__shots figcaption {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--text-soft);
+}
+
+.more {
+  margin-top: 28px;
+}
+
+/* Texto corrido (Sobre e Artigo) ------------------------------------------ */
+
+.prose {
+  max-width: 920px;
+  padding-top: clamp(24px, 1.8vw, 34px);
+}
+
+.prose h1 {
+  margin-bottom: 20px;
+  font: 400 clamp(40px, 5vw, 72px) / 1.1 var(--font-serif);
+  letter-spacing: -0.02em;
+}
+
+.prose h2 {
+  margin: clamp(48px, 3.5vw, 64px) 0 18px;
+  font-size: clamp(30px, 2.4vw, 40px);
+}
+
+.prose p {
+  max-width: 64ch;
+  font-size: clamp(17px, 1.6vw, 23px);
+  line-height: 1.65;
+  color: var(--text-soft);
+}
+
+.prose .lead {
+  font-size: clamp(19px, 1.8vw, 26px);
+  line-height: 1.55;
+}
+
+.prose ul {
+  padding-left: 20px;
+  font-size: clamp(16.5px, 1.5vw, 23px);
+  line-height: 1.6;
+  color: var(--text-soft);
+}
+
+.prose li {
+  margin-bottom: 10px;
+}
+
+.prose .btn {
+  height: 40px;
+  margin-top: 36px;
+}
+
+/* Stack agrupada (Sobre) -------------------------------------------------- */
+
+.stackgroup {
+  margin-top: 18px;
+}
+
+.stackgroup h3 {
+  margin-bottom: 9px;
+  font: 700 13px/1 var(--font-sans);
+  color: var(--text-faint);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  padding: 7px 13px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--card);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Árvore de pastas (Artigo) ----------------------------------------------- */
+
+.tree {
+  margin-top: 18px;
+  padding: 20px 22px;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--card);
+  font:
+    13.5px/1.6 ui-monospace,
+    Menlo,
+    Consolas,
+    monospace;
+  color: var(--text-soft);
+}
+
+/* Contato ----------------------------------------------------------------- */
+
+.contact {
+  margin-top: clamp(24px, 1.8vw, 34px);
+  padding: clamp(64px, 5vw, 84px) clamp(56px, 4.5vw, 76px);
+  border-radius: var(--radius);
+  background: linear-gradient(100deg, var(--surface-from), var(--surface-to));
+}
+
+.contact h1 {
+  font: 400 clamp(40px, 5vw, 76px) / 1.05 var(--font-serif);
+  letter-spacing: -0.02em;
+}
+
+.contact .lead {
+  max-width: 46ch;
+  margin-top: 18px;
+  font-size: clamp(18px, 1.6vw, 24px);
+  line-height: 1.5;
+  color: var(--text-soft);
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(14px, 1.1vw, 20px);
+  margin-top: clamp(40px, 3vw, 56px);
+}
+
+.tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(26px, 2vw, 36px);
+  min-width: 0;
+  padding: clamp(22px, 1.8vw, 32px);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  color: var(--glass-text);
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  transition: transform 0.2s;
+}
+
+.tile > div {
+  min-width: 0;
+}
+
+.tile:hover {
+  transform: translateY(-3px);
+}
+
+.tile__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tile__icon {
+  display: grid;
+  place-items: center;
+  width: clamp(44px, 3.5vw, 56px);
+  height: clamp(44px, 3.5vw, 56px);
+  border-radius: 12px;
+  color: var(--glass-btn-icon);
+  background: var(--glass-btn-bg);
+}
+
+.tile__icon svg {
+  width: clamp(21px, 1.7vw, 27px);
+  height: clamp(21px, 1.7vw, 27px);
+}
+
+.tile small {
+  display: block;
+  margin-bottom: 5px;
+  font-size: clamp(13px, 1.2vw, 18px);
+  color: var(--glass-muted);
+}
+
+.tile b {
+  display: block;
+  overflow-wrap: anywhere;
+  font: 700 clamp(16px, 1.4vw, 22px) / 1.3 var(--font-sans);
+}
+
+.tile__link {
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+}
+
+.tile__copy {
+  position: relative;
+  z-index: 2;
+  padding: 7px 11px;
+  border: 1px solid var(--glass-border);
+  border-radius: 9px;
+  color: var(--glass-text);
+  background: none;
+  font: 700 12px/1 var(--font-sans);
+  cursor: pointer;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 28px;
+  padding: 9px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 14px;
+  color: var(--text-soft);
+  background: var(--btn-ghost-bg);
+}
+
+@media (max-width: 820px) {
+  .grid,
+  .tiles,
+  .project__shots {
+    grid-template-columns: 1fr;
+  }
+
+  .project__shots--koffe {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .contact {
+    padding: 36px 24px;
+  }
+}
+
+@media (max-width: 520px) {
+  .section {
+    margin-top: 52px;
+  }
+
+  .section--first {
+    margin-top: 16px;
+  }
+
+  .project {
+    padding: 22px 18px;
+  }
+
+  .project h3 {
+    font-size: 24px;
+  }
+
+  .project__shots--koffe {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact {
+    padding: 30px 18px;
+    border-radius: 22px;
+  }
+
+  .tiles {
+    gap: 10px;
+    margin-top: 28px;
+  }
+
+  .tile {
+    gap: 20px;
+    padding: 18px;
+  }
+
+  .prose h2 {
+    margin-top: 38px;
+    font-size: 27px;
+  }
+
+  .prose p,
+  .prose .lead {
+    font-size: 16px;
+  }
+
+  .tree {
+    padding: 16px;
+    font-size: 12px;
+  }
+}

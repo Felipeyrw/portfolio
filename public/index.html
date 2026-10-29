@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Felipe Carolino — Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./js/components/theme-switcher.js"></script>
+    <link rel="stylesheet" href="./themes/light.css" />
+    <link rel="stylesheet" href="./themes/dark.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/pages.css" />
+  </head>
+  <body
+    data-title-en="Software Developer"
+    data-title-pt="Desenvolvedor de Software"
+  >
+    <header class="header container">
+      <button
+        class="theme-toggle"
+        type="button"
+        data-theme-toggle
+        aria-pressed="false"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.7"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <circle cx="12" cy="12" r="4" />
+          <path
+            d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"
+          />
+        </svg>
+        <span data-language="en" data-theme-label="dark">Dark mode</span>
+        <span hidden data-language="pt" data-theme-label="dark"
+          >Modo escuro</span
+        >
+        <span hidden data-language="en" data-theme-label="light"
+          >Light mode</span
+        >
+        <span hidden data-language="pt" data-theme-label="light"
+          >Modo claro</span
+        >
+      </button>
+      <nav class="nav nav--desktop" aria-label="Main navigation">
+        <a href="index.html" aria-current="page"
+          ><span data-language="en">Home</span
+          ><span hidden data-language="pt">Início</span></a
+        >
+        <a href="pages/about.html"
+          ><span data-language="en">About</span
+          ><span hidden data-language="pt">Sobre</span></a
+        >
+        <a href="pages/projects.html"
+          ><span data-language="en">Projects</span
+          ><span hidden data-language="pt">Projetos</span></a
+        >
+        <a href="pages/article.html"
+          ><span data-language="en">Article</span
+          ><span hidden data-language="pt">Artigo</span></a
+        >
+        <a href="pages/contact.html"
+          ><span data-language="en">Contact</span
+          ><span hidden data-language="pt">Contato</span></a
+        >
+      </nav>
+      <div class="header__right">
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+        </div>
+        <a
+          class="btn btn--solid"
+          href="https://github.com/Felipeyrw"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+            <path
+              d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.34c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.23 1.88.87 2.34.67.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0z"
+            />
+          </svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+      <details class="mobile-nav">
+        <summary>
+          <span data-language="en">Menu</span
+          ><span hidden data-language="pt">Menu</span>
+        </summary>
+        <nav class="nav" aria-label="Mobile navigation">
+          <a href="index.html" aria-current="page"
+            ><span data-language="en">Home</span
+            ><span hidden data-language="pt">Início</span></a
+          >
+          <a href="pages/about.html"
+            ><span data-language="en">About</span
+            ><span hidden data-language="pt">Sobre</span></a
+          >
+          <a href="pages/projects.html"
+            ><span data-language="en">Projects</span
+            ><span hidden data-language="pt">Projetos</span></a
+          >
+          <a href="pages/article.html"
+            ><span data-language="en">Article</span
+            ><span hidden data-language="pt">Artigo</span></a
+          >
+          <a href="pages/contact.html"
+            ><span data-language="en">Contact</span
+            ><span hidden data-language="pt">Contato</span></a
+          >
+        </nav>
+      </details>
+    </header>
+    <main class="container">
+      <section class="hero">
+        <div class="hero__content">
+          <h1>
+            <span data-language="en">Build Better</span
+            ><span class="accent" data-language="en">Faster Smarter</span
+            ><span hidden data-language="pt">Construa Melhor</span
+            ><span hidden class="accent" data-language="pt">Mais Rápido</span>
+          </h1>
+          <p class="hero__lead" data-language="en">
+            Systems Analysis and Development (ADS) student building mobile apps,
+            web applications and automations.
+          </p>
+          <p class="hero__lead" hidden data-language="pt">
+            Estudante de Análise e Desenvolvimento de Sistemas (ADS) criando
+            apps mobile, web e automações.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--solid" href="pages/projects.html"
+              ><span data-language="en">View projects</span
+              ><span hidden data-language="pt">Ver projetos</span></a
+            >
+            <a class="btn btn--ghost" href="pages/contact.html"
+              ><span data-language="en">Get in touch</span
+              ><span hidden data-language="pt">Entrar em contato</span></a
+            >
+          </div>
+          <ul class="stats">
+            <li>
+              <strong
+                >2+<span data-language="en">yr</span
+                ><span hidden data-language="pt"> anos</span></strong
+              ><span data-language="en">Developing Projects</span
+              ><span hidden data-language="pt">Desenvolvendo Projetos</span>
+            </li>
+            <li>
+              <strong>5+</strong><span data-language="en">GitHub projects</span
+              ><span hidden data-language="pt">Projetos no GitHub</span>
+            </li>
+            <li>
+              <strong>B2</strong><span data-language="en">English</span
+              ><span hidden data-language="pt">Inglês</span>
+            </li>
+          </ul>
+        </div>
+        <div class="hero__media">
+          <div class="arch">
+            <img
+              src="./assets/foto-felipe.webp"
+              alt="Felipe Carolino"
+              width="1008"
+              height="952"
+              fetchpriority="high"
+            />
+          </div>
+          <aside
+            class="badge"
+            data-draggable
+            tabindex="0"
+            aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown"
+            data-drag-title-en="Drag to reposition with the mouse or focus and use the arrow keys."
+            data-drag-title-pt="Arraste com o mouse ou use as setas do teclado para mover."
+          >
+            <span class="badge__dot"></span>
+            <div>
+              <small data-language="en">Summer 2027</small
+              ><small hidden data-language="pt">Verão 2027</small
+              ><b data-language="en">Open to internships</b
+              ><b hidden data-language="pt">Aberto a estágios</b>
+            </div>
+            <a
+              class="badge__btn"
+              href="pages/contact.html"
+              aria-label="Contact"
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M3 11 11 3M4.5 3H11v6.5" />
+              </svg>
+            </a>
+          </aside>
+        </div>
+      </section>
+      <section class="brands" aria-label="Technology stack">
+        <div class="brands__track">
+          <div class="brands__set">
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/flutter.svg" alt="" /></span
+              >Flutter</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/dart.svg" alt="" /></span
+              >Dart</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/typescript.svg" alt="" /></span
+              >TypeScript</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/react.svg" alt="" /></span
+              >React</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/html5.svg" alt="" /></span
+              >HTML5</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/css.svg" alt="" /></span
+              >CSS</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/python.svg" alt="" /></span
+              >Python</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/swagger.svg" alt="" /></span
+              >REST API</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img
+                  src="./assets/stack-icons/sql-database.svg"
+                  alt="" /></span
+              >SQL</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/sqlite.svg" alt="" /></span
+              >SQLite</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/firebase.svg" alt="" /></span
+              >Firebase</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/supabase.svg" alt="" /></span
+              >Supabase</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/opencode.svg" alt="" /></span
+              >OpenCode</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/ai-orbit.svg" alt="" /></span
+              >AntiGravity</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/n8n.svg" alt="" /></span
+              >n8n</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/docker.svg" alt="" /></span
+              >Docker</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/vercel.svg" alt="" /></span
+              >Vercel</span
+            >
+          </div>
+          <div class="brands__set" aria-hidden="true">
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/flutter.svg" alt="" /></span
+              >Flutter</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/dart.svg" alt="" /></span
+              >Dart</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/typescript.svg" alt="" /></span
+              >TypeScript</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/react.svg" alt="" /></span
+              >React</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/html5.svg" alt="" /></span
+              >HTML5</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/css.svg" alt="" /></span
+              >CSS</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/python.svg" alt="" /></span
+              >Python</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/swagger.svg" alt="" /></span
+              >REST API</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img
+                  src="./assets/stack-icons/sql-database.svg"
+                  alt="" /></span
+              >SQL</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/sqlite.svg" alt="" /></span
+              >SQLite</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/firebase.svg" alt="" /></span
+              >Firebase</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/supabase.svg" alt="" /></span
+              >Supabase</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/opencode.svg" alt="" /></span
+              >OpenCode</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/ai-orbit.svg" alt="" /></span
+              >AntiGravity</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/n8n.svg" alt="" /></span
+              >n8n</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/docker.svg" alt="" /></span
+              >Docker</span
+            >
+            <span class="brand"
+              ><span class="brand__icon"
+                ><img src="./assets/stack-icons/vercel.svg" alt="" /></span
+              >Vercel</span
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/components/language-switcher.js"></script>
+    <script src="./js/components/draggable.js"></script>
+  </body>
+</html>
