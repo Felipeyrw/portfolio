@@ -90,6 +90,10 @@
   gap: clamp(8px, 1vw, 16px);
 }
 
+.project__shots--single {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .project__shots img {
   width: 100%;
   height: auto;

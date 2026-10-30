@@ -15,6 +15,7 @@ assets/             foto, imagens de projetos e ícones
 
 ## Convenções
 
+- Header: `js/components/site-header.js` renderiza a navegação compartilhada nas páginas; cada `<body>` informa a página atual em `data-page`.
 - Idioma: botão EN/PT no header; escolha salva em `localStorage`.
-- Tema: segue a preferência de cor do navegador/sistema até uma escolha manual; o botão no header salva essa escolha em `localStorage`, com variáveis em `themes/`.
+- Tema: segue a preferência de cor do navegador/sistema até uma escolha manual; o botão no header persiste a escolha em `localStorage` e em um cookie com escopo `/`, compartilhado entre páginas e subpastas.
 - Formatação: `npm install` e depois `npm run format` antes de cada entrega.

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="utf-8" />
@@ -18,44 +18,8 @@
   <link rel="stylesheet" href="../css/pages.css" />
 </head>
 
-<body data-title-en="Projects" data-title-pt="Projetos">
-  <header class="header container">
-    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false"><svg viewBox="0 0 24 24"
-        fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"
-        aria-hidden="true">
-        <circle cx="12" cy="12" r="4" />
-        <path
-          d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" />
-      </svg><span data-language="en" data-theme-label="dark">Dark mode</span><span hidden data-language="pt"
-        data-theme-label="dark">Modo escuro</span><span hidden data-language="en" data-theme-label="light">Light
-        mode</span><span hidden data-language="pt" data-theme-label="light">Modo claro</span></button>
-    <nav class="nav nav--desktop" aria-label="Main navigation"><a href="../index.html"><span
-          data-language="en">Home</span><span hidden data-language="pt">Início</span></a><a href="about.html"><span
-          data-language="en">About</span><span hidden data-language="pt">Sobre</span></a><a href="projects.html"
-        aria-current="page"><span data-language="en">Projects</span><span hidden
-          data-language="pt">Projetos</span></a><a href="article.html"><span data-language="en">Article</span><span
-          hidden data-language="pt">Artigo</span></a><a href="contact.html"><span data-language="en">Contact</span><span
-          hidden data-language="pt">Contato</span></a></nav>
-    <div class="header__right">
-      <div class="lang" role="group" aria-label="Language"><button type="button" data-lang="en"
-          aria-pressed="true">EN</button><button type="button" data-lang="pt" aria-pressed="false">PT</button></div><a
-        class="btn btn--solid" href="https://github.com/Felipeyrw" target="_blank" rel="noopener"><svg
-          viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-          <path
-            d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.34c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.23 1.88.87 2.34.67.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0z" />
-        </svg><span>GitHub</span></a>
-    </div>
-    <details class="mobile-nav">
-      <summary><span data-language="en">Menu</span><span hidden data-language="pt">Menu</span></summary>
-      <nav class="nav" aria-label="Mobile navigation"><a href="../index.html"><span data-language="en">Home</span><span
-            hidden data-language="pt">Início</span></a><a href="about.html"><span data-language="en">About</span><span
-            hidden data-language="pt">Sobre</span></a><a href="projects.html" aria-current="page"><span
-            data-language="en">Projects</span><span hidden data-language="pt">Projetos</span></a><a
-          href="article.html"><span data-language="en">Article</span><span hidden data-language="pt">Artigo</span></a><a
-          href="contact.html"><span data-language="en">Contact</span><span hidden data-language="pt">Contato</span></a>
-      </nav>
-    </details>
-  </header>
+<body data-title-en="Projects" data-title-pt="Projetos" data-page="projects">
+  <div data-site-header></div>
   <main class="container">
     <section class="section section--first" data-language="en">
       <h2>Projects</h2>
@@ -73,7 +37,6 @@
               merge-based conflict resolution</li>
             <li>Voice scheduling with AI (Groq): speak in Portuguese and the form fills itself</li>
             <li>Encrypted local database (SQLCipher), biometric authentication and device tracking</li>
-            <li>Scale: 41,000+ lines of code, 174 Dart files and 14 sync managers</li>
           </ul>
           <div class="project__shots project__shots--koffe">
             <figure><a href="../assets/projects/financeiroPage.jpeg" target="_blank" rel="noopener"><img
@@ -175,18 +138,30 @@
           </div>
         </article>
         <article class="project">
-          <h3>Planejai</h3>
+          <h3>Planej.ai</h3>
           <div class="chips"><span class="chip chip--sm">React</span><span class="chip chip--sm">TypeScript</span><span
               class="chip chip--sm">Vite</span><span class="chip chip--sm">TailwindCSS</span><span
               class="chip chip--sm">LocalStorage</span></div>
-          <p>Responsive website built during the Santander Front-End Bootcamp (React + AI) by DIO. It organizes your
-            goals and uses AI to simulate a plan to reach them within your timeframe.</p>
+          <p>Responsive financial planning app built during DIO's Santander Front-End Bootcamp (React + AI). Planej.ai
+            turns a savings goal and your monthly financial profile into a timeline, a savings target and personalized
+            guidance to help you stay on track.</p>
           <ul>
-            <li>New simulation from 6 inputs: income, fixed expenses, debts, goal name, cost and deadline</li>
-            <li>Results page with AI-generated recommendations to reach the goal on time</li>
-            <li>History of past simulations, with details and delete</li>
-            <li>Light and dark theme switcher</li>
+            <li>Build a simulation from your income, fixed expenses, debts, goal, target cost and deadline</li>
+            <li>Review the monthly savings needed, timeline and financial viability of your goal</li>
+            <li>Get a personalized financial diagnosis, practical saving tips and ideas to increase your income</li>
+            <li>Keep a history of simulations and switch between light and dark themes</li>
           </ul>
+          <div class="project__shots project__shots--single">
+            <figure><a href="../assets/projects/planejai_sim.png" target="_blank" rel="noopener"><img
+                  src="../assets/projects/planejai_sim.png" alt="Planej.ai simulation results dashboard"
+                  width="1920" height="952" data-alt-en="Planej.ai simulation results dashboard"
+                  data-alt-pt="Painel de resultados de uma simulação do Planej.ai" loading="lazy"
+                  decoding="async" /></a>
+              <figcaption><span data-language="en">Simulation results and personalized financial guidance</span><span
+                  hidden data-language="pt">Resultado da simulação e orientação financeira personalizada</span>
+              </figcaption>
+            </figure>
+          </div>
         </article>
         <article class="project">
           <h3>SellingControl</h3>
@@ -201,17 +176,28 @@
           </ul>
         </article>
         <article class="project">
-          <h3>devroast</h3>
+          <h3>DevRoast</h3>
           <div class="chips"><span class="chip chip--sm">Vibe Coding</span><span class="chip chip--sm">Prompt
-              Enginnering</span></div>
-          <p>Tool for developers who want direct, unfiltered feedback on their code: paste it, pick the analysis mode
-            and get an evaluation.</p>
+              Engineering</span></div>
+          <p>A playful code-review tool for developers who want direct, unfiltered feedback. Submit a code snippet,
+            choose the roast mode and get a score, a punchy critique and a breakdown of potential issues.</p>
           <ul>
-            <li>Roast mode for maximum sarcasm</li>
-            <li>Score from 0 to 10 and a leaderboard of the worst code submitted</li>
-            <li>Detailed analysis with issues, suggestions and diffs</li>
-            <li>Dark interface with JetBrains Mono and an emerald green accent</li>
+            <li>Score submissions from 0 to 10 and compare them on a leaderboard</li>
+            <li>See the overall roast alongside the submitted code, language, mode and issue count</li>
+            <li>Explore detailed findings, suggestions and code diffs</li>
+            <li>Shareable results in a dark, terminal-inspired interface</li>
           </ul>
+          <div class="project__shots project__shots--single">
+            <figure><a href="../assets/projects/devRoast_roast1.png" target="_blank" rel="noopener"><img
+                  src="../assets/projects/devRoast_roast1.png" alt="DevRoast score and code review results"
+                  width="1920" height="900" data-alt-en="DevRoast score and code review results"
+                  data-alt-pt="Nota do DevRoast e resultado da análise de código" loading="lazy"
+                  decoding="async" /></a>
+              <figcaption><span data-language="en">A code submission's score, roast and review details</span><span
+                  hidden data-language="pt">Nota, roast e detalhes da análise de um código enviado</span>
+              </figcaption>
+            </figure>
+          </div>
         </article>
       </div>
       <a class="btn btn--solid more" href="https://github.com/Felipeyrw" target="_blank" rel="noopener">See all on
@@ -233,7 +219,6 @@
               e resolução de conflitos por merge</li>
             <li>Agendamento por voz com IA (Groq): fale em português e o formulário é preenchido</li>
             <li>Banco local criptografado (SQLCipher), autenticação biométrica e rastreamento de dispositivos</li>
-            <li>Escala: mais de 41.000 linhas de código, 174 arquivos Dart e 14 sync managers</li>
           </ul>
           <div class="project__shots project__shots--koffe">
             <figure><a href="../assets/projects/financeiroPage.jpeg" target="_blank" rel="noopener"><img
@@ -336,18 +321,30 @@
           </div>
         </article>
         <article class="project">
-          <h3>Planejai</h3>
+          <h3>Planej.ai</h3>
           <div class="chips"><span class="chip chip--sm">React</span><span class="chip chip--sm">TypeScript</span><span
               class="chip chip--sm">Vite</span><span class="chip chip--sm">TailwindCSS</span><span
               class="chip chip--sm">LocalStorage</span></div>
-          <p>Site responsivo feito no Bootcamp Santander Front-End (React + AI) da DIO. Organiza suas metas e usa IA
-            para simular um plano para alcançá-las dentro do seu prazo.</p>
+          <p>App responsivo de planejamento financeiro criado durante o Bootcamp Santander Front-End (React + AI) da
+            DIO. O Planej.ai transforma uma meta e seu perfil financeiro mensal em um prazo, um valor de economia
+            mensal e orientações personalizadas para ajudar você a chegar lá.</p>
           <ul>
-            <li>Nova simulação com 6 dados: renda, despesas fixas, dívidas, nome da meta, custo e prazo</li>
-            <li>Página de resultados com recomendações geradas por IA para chegar à meta no prazo</li>
-            <li>Histórico de simulações, com detalhes e exclusão</li>
-            <li>Alternância entre tema claro e escuro</li>
+            <li>Monte uma simulação com renda, custos fixos, dívidas, meta, valor desejado e prazo</li>
+            <li>Confira a economia mensal necessária, o prazo e a viabilidade financeira da meta</li>
+            <li>Receba um diagnóstico financeiro personalizado, dicas práticas de economia e ideias para aumentar a renda</li>
+            <li>Consulte o histórico de simulações e alterne entre os temas claro e escuro</li>
           </ul>
+          <div class="project__shots project__shots--single">
+            <figure><a href="../assets/projects/planejai_sim.png" target="_blank" rel="noopener"><img
+                  src="../assets/projects/planejai_sim.png" alt="Painel de resultados de uma simulação do Planej.ai"
+                  width="1920" height="952" data-alt-en="Planej.ai simulation results dashboard"
+                  data-alt-pt="Painel de resultados de uma simulação do Planej.ai" loading="lazy"
+                  decoding="async" /></a>
+              <figcaption><span hidden data-language="en">Simulation results and personalized financial guidance</span>
+                <span data-language="pt">Resultado da simulação e orientação financeira personalizada</span>
+              </figcaption>
+            </figure>
+          </div>
         </article>
         <article class="project">
           <h3>SellingControl</h3>
@@ -365,22 +362,34 @@
         <article class="project">
           <h3>DevRoast</h3>
           <div class="chips"><span class="chip chip--sm">Vibe Coding</span><span class="chip chip--sm">Prompt
-              Enginnering</span></div>
-          <p>Ferramenta para desenvolvedores que querem feedback direto e sem filtros sobre o código: cole, escolha o
-            modo de análise e receba a avaliação.</p>
+              Engineering</span></div>
+          <p>Ferramenta descontraída de análise de código para quem quer feedback direto e sem filtros. Envie um trecho
+            de código, escolha o modo roast e receba uma nota, uma crítica afiada e um resumo de possíveis problemas.</p>
           <ul>
-            <li>Modo roast com sarcasmo máximo</li>
-            <li>Nota de 0 a 10 e leaderboard com os piores códigos enviados</li>
-            <li>Análise detalhada com problemas, sugestões e diffs</li>
-            <li>Interface escura com JetBrains Mono e destaque em verde esmeralda</li>
+            <li>Avalie os envios de 0 a 10 e compare as notas em um leaderboard</li>
+            <li>Veja o roast junto ao código enviado, à linguagem, ao modo e à quantidade de problemas encontrados</li>
+            <li>Explore apontamentos detalhados, sugestões e diffs de código</li>
+            <li>Resultados compartilháveis em uma interface escura inspirada em terminais</li>
           </ul>
+          <div class="project__shots project__shots--single">
+            <figure><a href="../assets/projects/devRoast_roast1.png" target="_blank" rel="noopener"><img
+                  src="../assets/projects/devRoast_roast1.png" alt="Nota do DevRoast e resultado da análise de código"
+                  width="1920" height="900" data-alt-en="DevRoast score and code review results"
+                  data-alt-pt="Nota do DevRoast e resultado da análise de código" loading="lazy"
+                  decoding="async" /></a>
+              <figcaption><span hidden data-language="en">A code submission's score, roast and review details</span>
+                <span data-language="pt">Nota, roast e detalhes da análise de um código enviado</span>
+              </figcaption>
+            </figure>
+          </div>
         </article>
       </div>
       <a class="btn btn--solid more" href="https://github.com/Felipeyrw" target="_blank" rel="noopener">Ver todos no
         GitHub</a>
     </section>
   </main>
-  <script src="../js/components/language-switcher.js"></script>
+  <script src="../js/components/site-header.js"></script>
+    <script src="../js/components/language-switcher.js"></script>
 </body>
 
 </html>

@@ -363,7 +363,9 @@
 
   .badge {
     right: 12px;
-    left: 12px;
+    left: auto;
+    width: fit-content;
+    max-width: calc(100% - 24px);
   }
 }
 
