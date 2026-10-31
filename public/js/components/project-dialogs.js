@@ -132,4 +132,19 @@
     project.appendChild(openButton);
     project.appendChild(dialog);
   });
+
+  if (location.hash === "#koffe") {
+    var koffeProject = Array.from(document.querySelectorAll(".project")).find(
+      function (project) {
+        var heading = project.querySelector("h3");
+        return (
+          heading &&
+          heading.textContent.trim() === "Koffe" &&
+          !project.closest("[hidden]")
+        );
+      }
+    );
+    var koffeDialog = koffeProject && koffeProject.querySelector("dialog");
+    if (koffeDialog) koffeDialog.showModal();
+  }
 })();
