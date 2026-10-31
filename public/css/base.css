@@ -11,7 +11,7 @@
 
 :root {
   --radius: 28px;
-  --container: 1400px;
+  --container: 1600px;
 }
 
 html {
@@ -25,7 +25,11 @@ body {
   font-family: var(--font-sans);
   color: var(--text);
   background-color: var(--bg);
-  background-image: repeating-linear-gradient(135deg, var(--bg-lines) 0 1px, transparent 1px 4px);
+  background-image: repeating-linear-gradient(
+    135deg,
+    var(--bg-lines) 0 1px,
+    transparent 1px 4px
+  );
   -webkit-font-smoothing: antialiased;
 }
 
@@ -46,7 +50,7 @@ svg {
 }
 
 .container {
-  width: min(var(--container), 100% - 48px);
+  width: min(var(--container), 100% - 32px);
   margin-inline: auto;
 }
 
@@ -56,7 +60,7 @@ svg {
 
 /* Espaço inferior de todas as páginas, para o conteúdo respirar no fim da tela */
 main {
-  padding-bottom: clamp(64px, 10vw, 140px);
+  padding-bottom: clamp(24px, 4vw, 48px);
 }
 
 /* Botões ------------------------------------------------------------------ */

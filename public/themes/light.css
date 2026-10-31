@@ -8,7 +8,9 @@
   --bg-lines: rgba(26, 23, 20, 0.022);
   --surface-from: #f1ede4;
   --surface-to: #d9ccb5;
-  --card: rgba(255, 255, 255, 0.55);
+  --card: rgba(255, 255, 255, 0.82);
+  --dialog-bg: #fffdf9;
+  --shadow-dialog: 0 24px 70px rgba(26, 23, 20, 0.24);
   --text: #1a1714;
   --text-soft: #5d534a;
   --text-faint: #9c7e4f;

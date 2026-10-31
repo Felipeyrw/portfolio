@@ -5,11 +5,11 @@
 /* Seções e grid de projetos ----------------------------------------------- */
 
 .section {
-  margin-top: clamp(72px, 5vw, 92px);
+  margin-top: clamp(40px, 3.5vw, 56px);
 }
 
 .section--first {
-  margin-top: clamp(24px, 1.8vw, 34px);
+  margin-top: 8px;
 }
 
 .section h2,
@@ -32,10 +32,53 @@
 }
 
 .project {
-  padding: clamp(26px, 2.1vw, 36px) clamp(28px, 2.3vw, 40px);
+  padding: clamp(22px, 1.8vw, 30px) clamp(22px, 2vw, 32px);
   border: 1px solid var(--border);
   border-radius: 20px;
   background: var(--card);
+}
+
+.project__preview h3 + p {
+  margin-top: 10px;
+}
+
+.project__preview .chips {
+  margin: 12px 0 18px;
+}
+
+.project__open {
+  margin-top: 20px;
+}
+
+.project__dialog {
+  width: min(920px, calc(100% - 32px));
+  max-height: calc(100dvh - 40px);
+  margin: auto;
+  padding: clamp(22px, 2.5vw, 36px);
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--text);
+  background: var(--dialog-bg);
+  box-shadow: var(--shadow-dialog);
+}
+
+.project__dialog::backdrop {
+  background: rgb(0 0 0 / 72%);
+  backdrop-filter: blur(2px);
+}
+
+.project__dialog-close {
+  display: block;
+  margin: 0 0 18px auto;
+}
+
+.project__dialog-body {
+  padding-top: 6px;
+}
+
+.project__github {
+  margin-top: 20px;
 }
 
 .project--wide {
@@ -114,8 +157,8 @@
 /* Texto corrido (Sobre e Artigo) ------------------------------------------ */
 
 .prose {
-  max-width: 920px;
-  padding-top: clamp(24px, 1.8vw, 34px);
+  max-width: 1200px;
+  padding-top: 12px;
 }
 
 .prose h1 {
@@ -125,7 +168,7 @@
 }
 
 .prose h2 {
-  margin: clamp(48px, 3.5vw, 64px) 0 18px;
+  margin: clamp(36px, 3vw, 48px) 0 16px;
   font-size: clamp(30px, 2.4vw, 40px);
 }
 
@@ -204,8 +247,8 @@
 /* Contato ----------------------------------------------------------------- */
 
 .contact {
-  margin-top: clamp(24px, 1.8vw, 34px);
-  padding: clamp(64px, 5vw, 84px) clamp(56px, 4.5vw, 76px);
+  margin-top: 8px;
+  padding: clamp(40px, 3.5vw, 56px) clamp(32px, 3.5vw, 48px);
   border-radius: var(--radius);
   background: linear-gradient(100deg, var(--surface-from), var(--surface-to));
 }
@@ -227,7 +270,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: clamp(14px, 1.1vw, 20px);
-  margin-top: clamp(40px, 3vw, 56px);
+  margin-top: clamp(32px, 2.5vw, 40px);
 }
 
 .tile {
@@ -331,21 +374,21 @@
   }
 
   .contact {
-    padding: 36px 24px;
+    padding: 32px 22px;
   }
 }
 
 @media (max-width: 520px) {
   .section {
-    margin-top: 52px;
+    margin-top: 36px;
   }
 
   .section--first {
-    margin-top: 16px;
+    margin-top: 10px;
   }
 
   .project {
-    padding: 22px 18px;
+    padding: 20px 16px;
   }
 
   .project h3 {
@@ -357,23 +400,33 @@
   }
 
   .contact {
-    padding: 30px 18px;
+    margin-top: 10px;
+    padding: 24px 16px;
     border-radius: 22px;
   }
 
   .tiles {
     gap: 10px;
-    margin-top: 28px;
+    margin-top: 22px;
   }
 
   .tile {
-    gap: 20px;
-    padding: 18px;
+    gap: 16px;
+    padding: 16px;
   }
 
   .prose h2 {
-    margin-top: 38px;
+    margin-top: 30px;
     font-size: 27px;
+  }
+
+  .prose {
+    padding-top: 10px;
+  }
+
+  .prose h1,
+  .contact h1 {
+    display: none;
   }
 
   .prose p,

@@ -3,43 +3,33 @@
   var placeholder = document.querySelector("[data-site-header]");
   if (!placeholder) return;
 
+  var linkedinUrl = "https://www.linkedin.com/in/felipe-da-silva-carolino-10b7b8353/";
   var page = document.body.dataset.page;
   var base = page === "home" ? "" : "../";
   var pages = [
     { id: "home", href: base + "index.html", en: "Home", pt: "Início" },
     { id: "about", href: base + "pages/about.html", en: "About", pt: "Sobre" },
-    {
-      id: "projects",
-      href: base + "pages/projects.html",
-      en: "Projects",
-      pt: "Projetos",
-    },
-    {
-      id: "article",
-      href: base + "pages/article.html",
-      en: "Article",
-      pt: "Artigo",
-    },
-    {
-      id: "contact",
-      href: base + "pages/contact.html",
-      en: "Contact",
-      pt: "Contato",
-    },
+    { id: "projects", href: base + "pages/projects.html", en: "Projects", pt: "Projetos" },
+    { id: "contact", href: base + "pages/contact.html", en: "Contact", pt: "Contato" }
   ];
 
   function renderLinks() {
     return pages
+      .filter(function (item) {
+        if (page === "article") {
+          return item.id === "home" || item.id === "projects" || item.id === "contact";
+        }
+        return item.id !== page;
+      })
       .map(function (item) {
-        var current = item.id === page ? ' aria-current="page"' : "";
         return (
           '<a href="' +
           item.href +
-          '"' +
-          current +
-          '><span data-language="en">' +
+          '">' +
+          '<span data-language="en">' +
           item.en +
-          '</span><span hidden data-language="pt">' +
+          "</span>" +
+          '<span hidden data-language="pt">' +
           item.pt +
           "</span></a>"
         );
@@ -62,13 +52,16 @@
     renderLinks() +
     "</nav>" +
     '<div class="header__right">' +
+    '<a class="header__social" href="' +
+    linkedinUrl +
+    '" target="_blank" rel="noopener" aria-label="LinkedIn">' +
+    '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">' +
+    '<path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z" />' +
+    "</svg></a>" +
     '<div class="lang" role="group" aria-label="Language">' +
     '<button type="button" data-lang="en" aria-pressed="true">EN</button>' +
     '<button type="button" data-lang="pt" aria-pressed="false">PT</button>' +
     "</div>" +
-    '<a class="btn btn--solid" href="https://github.com/Felipeyrw" target="_blank" rel="noopener">' +
-    '<svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.34c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.23 1.88.87 2.34.67.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0z" /></svg>' +
-    "<span>GitHub</span></a>" +
     "</div>" +
     '<details class="mobile-nav"><summary><span data-language="en">Menu</span><span hidden data-language="pt">Menu</span></summary>' +
     '<nav class="nav" aria-label="Mobile navigation">' +

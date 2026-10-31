@@ -9,7 +9,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito+Sans:wght@400;600;700&display=swap"
-    rel="stylesheet" />
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'"
+  />
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </noscript>
   <script src="../js/components/theme-switcher.js"></script>
   <link rel="stylesheet" href="../themes/light.css" />
   <link rel="stylesheet" href="../themes/dark.css" />
@@ -22,7 +31,6 @@
   <div data-site-header></div>
   <main class="container">
     <section class="section section--first" data-language="en">
-      <h2>Projects</h2>
       <p class="section__sub">Selected repositories from my GitHub.</p>
       <div class="grid">
         <article class="project">
@@ -153,8 +161,8 @@
           </ul>
           <div class="project__shots project__shots--single">
             <figure><a href="../assets/projects/planejai_sim.png" target="_blank" rel="noopener"><img
-                  src="../assets/projects/planejai_sim.png" alt="Planej.ai simulation results dashboard"
-                  width="1920" height="952" data-alt-en="Planej.ai simulation results dashboard"
+                  src="../assets/projects/planejai_sim-preview.webp" alt="Planej.ai simulation results dashboard"
+                  width="1600" height="793" data-alt-en="Planej.ai simulation results dashboard"
                   data-alt-pt="Painel de resultados de uma simulação do Planej.ai" loading="lazy"
                   decoding="async" /></a>
               <figcaption><span data-language="en">Simulation results and personalized financial guidance</span><span
@@ -189,8 +197,8 @@
           </ul>
           <div class="project__shots project__shots--single">
             <figure><a href="../assets/projects/devRoast_roast1.png" target="_blank" rel="noopener"><img
-                  src="../assets/projects/devRoast_roast1.png" alt="DevRoast score and code review results"
-                  width="1920" height="900" data-alt-en="DevRoast score and code review results"
+                  src="../assets/projects/devRoast_roast1-preview.webp" alt="DevRoast score and code review results"
+                  width="1600" height="750" data-alt-en="DevRoast score and code review results"
                   data-alt-pt="Nota do DevRoast e resultado da análise de código" loading="lazy"
                   decoding="async" /></a>
               <figcaption><span data-language="en">A code submission's score, roast and review details</span><span
@@ -204,7 +212,6 @@
         GitHub</a>
     </section>
     <section class="section section--first" hidden data-language="pt">
-      <h2>Projetos</h2>
       <p class="section__sub">Repositórios selecionados do meu GitHub.</p>
       <div class="grid">
         <article class="project">
@@ -336,8 +343,8 @@
           </ul>
           <div class="project__shots project__shots--single">
             <figure><a href="../assets/projects/planejai_sim.png" target="_blank" rel="noopener"><img
-                  src="../assets/projects/planejai_sim.png" alt="Painel de resultados de uma simulação do Planej.ai"
-                  width="1920" height="952" data-alt-en="Planej.ai simulation results dashboard"
+                  src="../assets/projects/planejai_sim-preview.webp" alt="Painel de resultados de uma simulação do Planej.ai"
+                  width="1600" height="793" data-alt-en="Planej.ai simulation results dashboard"
                   data-alt-pt="Painel de resultados de uma simulação do Planej.ai" loading="lazy"
                   decoding="async" /></a>
               <figcaption><span hidden data-language="en">Simulation results and personalized financial guidance</span>
@@ -373,8 +380,8 @@
           </ul>
           <div class="project__shots project__shots--single">
             <figure><a href="../assets/projects/devRoast_roast1.png" target="_blank" rel="noopener"><img
-                  src="../assets/projects/devRoast_roast1.png" alt="Nota do DevRoast e resultado da análise de código"
-                  width="1920" height="900" data-alt-en="DevRoast score and code review results"
+                  src="../assets/projects/devRoast_roast1-preview.webp" alt="Nota do DevRoast e resultado da análise de código"
+                  width="1600" height="750" data-alt-en="DevRoast score and code review results"
                   data-alt-pt="Nota do DevRoast e resultado da análise de código" loading="lazy"
                   decoding="async" /></a>
               <figcaption><span hidden data-language="en">A code submission's score, roast and review details</span>
@@ -390,6 +397,7 @@
   </main>
   <script src="../js/components/site-header.js"></script>
     <script src="../js/components/language-switcher.js"></script>
+    <script src="../js/components/project-dialogs.js"></script>
 </body>
 
 </html>

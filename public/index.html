@@ -9,7 +9,15 @@
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
     <script src="./js/components/theme-switcher.js"></script>
     <link rel="stylesheet" href="./themes/light.css" />
     <link rel="stylesheet" href="./themes/dark.css" />
@@ -20,296 +28,58 @@
   <body
     data-title-en="Software Developer"
     data-title-pt="Desenvolvedor de Software"
-   data-page="home">
+    data-page="home"
+  >
     <div data-site-header></div>
     <main class="container">
-      <section class="hero">
+      <section class="hero home-hero">
         <div class="hero__content">
+          <div class="home-identity">
+            <img
+              src="./assets/foto-felipe-avatar.webp"
+              alt=""
+              width="96"
+              height="96"
+              decoding="async"
+            />
+            <span>Felipe Carolino</span>
+          </div>
           <h1>
-            <span data-language="en">Build Better</span
-            ><span class="accent" data-language="en">Faster Smarter</span
-            ><span hidden data-language="pt">Construa Melhor</span
-            ><span hidden class="accent" data-language="pt">Mais Rápido</span>
+            <span data-language="en">I turn manual processes</span>
+            <span class="accent" data-language="en">into software that works for you.</span>
+            <span hidden data-language="pt">Transformo processos</span>
+            <span hidden class="accent" data-language="pt"
+              >manuais em software que trabalha por você.</span
+            >
           </h1>
           <p class="hero__lead" data-language="en">
-            Systems Analysis and Development (ADS) student building mobile apps,
-            web applications and automations.
+            Flutter, React and AI automation developer. Available for an internship in Summer 2027.
           </p>
           <p class="hero__lead" hidden data-language="pt">
-            Estudante de Análise e Desenvolvimento de Sistemas (ADS) criando
-            apps mobile, web e automações.
+            Desenvolvedor Flutter, React e automação com IA. Disponível para estágio, verão de 2027.
           </p>
           <div class="hero__cta">
             <a class="btn btn--solid" href="pages/projects.html"
               ><span data-language="en">View projects</span
               ><span hidden data-language="pt">Ver projetos</span></a
             >
-            <a
-              class="btn btn--ghost"
-              href="https://wa.me/5513991747596?text=Hi%20Felipe%2C%20I%27d%20like%20to%20get%20in%20touch."
-              target="_blank"
-              rel="noopener"
-              data-language="en"
-              >Get in touch</a
-            >
-            <a
-              class="btn btn--ghost"
-              href="https://wa.me/5513991747596?text=Ol%C3%A1%2C%20Felipe%21%20Gostaria%20de%20conversar."
-              target="_blank"
-              rel="noopener"
-              hidden
-              data-language="pt"
-              >Entrar em contato</a
-            >
           </div>
-          <ul class="stats">
-            <li>
-              <strong
-                >2+<span data-language="en">yr</span
-                ><span hidden data-language="pt"> anos</span></strong
-              ><span data-language="en">Developing Projects</span
-              ><span hidden data-language="pt">Desenvolvendo Projetos</span>
-            </li>
-            <li>
-              <strong>5+</strong><span data-language="en">GitHub projects</span
-              ><span hidden data-language="pt">Projetos no GitHub</span>
-            </li>
-            <li>
-              <strong>B2</strong><span data-language="en">English</span
-              ><span hidden data-language="pt">Inglês</span>
-            </li>
-          </ul>
-        </div>
-        <div class="hero__media">
-          <div class="arch">
-            <img
-              src="./assets/foto-felipe.webp"
-              alt="Felipe Carolino"
-              width="1008"
-              height="952"
-              fetchpriority="high"
-            />
-          </div>
-          <aside
-            class="badge"
-            data-draggable
-            tabindex="0"
-            aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown"
-            data-drag-title-en="Drag to reposition with the mouse or focus and use the arrow keys."
-            data-drag-title-pt="Arraste com o mouse ou use as setas do teclado para mover."
-          >
-            <span class="badge__dot"></span>
-            <div>
-              <small data-language="en">Summer 2027</small
-              ><small hidden data-language="pt">Verão 2027</small
-              ><b data-language="en">Open to internships</b
-              ><b hidden data-language="pt">Aberto a estágios</b>
-            </div>
-            <a
-              class="badge__btn"
-              href="https://wa.me/5513991747596?text=Hi%20Felipe%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20talk."
-              aria-label="Contact"
-              target="_blank"
-              rel="noopener"
-            >
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M3 11 11 3M4.5 3H11v6.5" />
-              </svg>
-            </a>
-          </aside>
         </div>
       </section>
-      <section class="brands" aria-label="Technology stack">
-        <div class="brands__track">
-          <div class="brands__set">
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/flutter.svg" alt="" /></span
-              >Flutter</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/dart.svg" alt="" /></span
-              >Dart</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/typescript.svg" alt="" /></span
-              >TypeScript</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/react.svg" alt="" /></span
-              >React</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/html5.svg" alt="" /></span
-              >HTML5</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/css.svg" alt="" /></span
-              >CSS</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/python.svg" alt="" /></span
-              >Python</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/swagger.svg" alt="" /></span
-              >REST API</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img
-                  src="./assets/stack-icons/sql-database.svg"
-                  alt="" /></span
-              >SQL</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/sqlite.svg" alt="" /></span
-              >SQLite</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/firebase.svg" alt="" /></span
-              >Firebase</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/supabase.svg" alt="" /></span
-              >Supabase</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/opencode.svg" alt="" /></span
-              >OpenCode</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/ai-orbit.svg" alt="" /></span
-              >AntiGravity</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/n8n.svg" alt="" /></span
-              >n8n</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/docker.svg" alt="" /></span
-              >Docker</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/vercel.svg" alt="" /></span
-              >Vercel</span
-            >
+      <section class="home-projects" aria-label="Featured project">
+        <a class="home-project-card" href="pages/projects.html">
+          <div>
+            <h2>Koffe</h2>
+            <p data-language="en">
+              Offline-first management for barbershops, with voice scheduling.
+            </p>
+            <p hidden data-language="pt">
+              App de gestão para barbearias, offline-first, com agendamento por voz.
+            </p>
           </div>
-          <div class="brands__set" aria-hidden="true">
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/flutter.svg" alt="" /></span
-              >Flutter</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/dart.svg" alt="" /></span
-              >Dart</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/typescript.svg" alt="" /></span
-              >TypeScript</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/react.svg" alt="" /></span
-              >React</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/html5.svg" alt="" /></span
-              >HTML5</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/css.svg" alt="" /></span
-              >CSS</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/python.svg" alt="" /></span
-              >Python</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/swagger.svg" alt="" /></span
-              >REST API</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img
-                  src="./assets/stack-icons/sql-database.svg"
-                  alt="" /></span
-              >SQL</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/sqlite.svg" alt="" /></span
-              >SQLite</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/firebase.svg" alt="" /></span
-              >Firebase</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/supabase.svg" alt="" /></span
-              >Supabase</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/opencode.svg" alt="" /></span
-              >OpenCode</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/ai-orbit.svg" alt="" /></span
-              >AntiGravity</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/n8n.svg" alt="" /></span
-              >n8n</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/docker.svg" alt="" /></span
-              >Docker</span
-            >
-            <span class="brand"
-              ><span class="brand__icon"
-                ><img src="./assets/stack-icons/vercel.svg" alt="" /></span
-              >Vercel</span
-            >
-          </div>
-        </div>
+          <span data-language="en">View case <span aria-hidden="true">→</span></span>
+          <span hidden data-language="pt">Ver caso <span aria-hidden="true">→</span></span>
+        </a>
       </section>
     </main>
     <script src="./js/components/site-header.js"></script>

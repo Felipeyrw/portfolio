@@ -5,7 +5,9 @@
   --bg-lines: rgba(245, 237, 216, 0.025);
   --surface-from: #2a2420;
   --surface-to: #54453a;
-  --card: rgba(245, 237, 216, 0.04);
+  --card: rgba(245, 237, 216, 0.09);
+  --dialog-bg: #302923;
+  --shadow-dialog: 0 24px 70px rgba(0, 0, 0, 0.55);
   --text: #f5edd8;
   --text-soft: #b9ad9b;
   --text-faint: #c8a96e;
